@@ -1,0 +1,93 @@
+@use "utils" as *;
+
+$color_type_0: rgb(0, 0, 0);
+$color_type_1: rgb(0, 0, 0);
+
+$bg_color_type_0: rgb(255, 255, 255);
+
+$btBColor: rgb(210, 108, 193);
+$btBTColor: rgb(255, 255, 255);
+
+$font_type_0: 700 50px "Work Sans", Helvetica, Arial, serif;
+$font_type_1: 600 15px "Work Sans", Helvetica, Arial, serif;
+$font_type_2: 300 20px "Work Sans", Helvetica, Arial, serif;
+
+.buttonPrimary{
+    background-color: $btBColor;
+    color: $btBTColor;
+}
+
+.root {
+  background: var(--src) center center / 100% 100% no-repeat;
+  background-color: $bg_color_type_0;
+  display: flex;
+  flex-direction: column;
+  min-height: 389px;
+  overflow: hidden;
+  position: relative;
+}
+.decorator {
+  bottom: -157px;
+  left: -151px;
+  object-fit: cover;
+  position: absolute;
+  right: 244px;
+  top: -256px;
+  width: calc(100% - -151px - 244px);
+}
+.flex_row {
+  align-items: center;
+  justify-content: spa;
+  display: flex;
+  flex-grow: 1;
+  margin: 9px 1.66% 0px 5.85%;
+  position: relative;
+  width: 92.49%;
+}
+.wrapper {
+  display: flex;
+  flex: 0 1 422px;
+  flex-direction: column;
+  margin: 57px 0px 177px;
+  position: relative;
+  min-height: '100%';
+}
+.flex_col {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  min-width: 600px;
+  gap: 5px 0px;
+  position: relative;
+}
+.highlights {
+  color: $color_type_1;
+  font: $font_type_1;
+  letter-spacing: -0.31px;
+}
+.title {
+  color: $color_type_0;
+  font: $font_type_0;
+  letter-spacing: -2.58px;
+  margin: 0px 24.88% 0px 0%;
+  width: 75.12%;
+}
+.highlights1 {
+  color: $color_type_0;
+  font: $font_type_2;
+  letter-spacing: -0.31px;
+}
+.flex_row__spacer {
+  flex: 0 1 102px;
+}
+.flex_row__cell {
+  display: flex;
+  flex-direction: column;
+  min-width: 314px;
+}
+.image1 {
+  flex-grow: 1;
+  min-height: 650px;
+  object-fit: cover;
+  width: 100%;
+}
